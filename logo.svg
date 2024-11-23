@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Outer circle (beacon signal) -->
+    <circle cx="256" cy="256" r="240" fill="none" stroke="#3498db" stroke-width="8" opacity="0.2">
+        <animate attributeName="r" from="180" to="240" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" from="0.4" to="0.1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Middle circle (beacon signal) -->
+    <circle cx="256" cy="256" r="180" fill="none" stroke="#3498db" stroke-width="8" opacity="0.3">
+        <animate attributeName="r" from="120" to="180" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" from="0.6" to="0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner circle (beacon signal) -->
+    <circle cx="256" cy="256" r="120" fill="none" stroke="#3498db" stroke-width="8" opacity="0.4">
+        <animate attributeName="r" from="60" to="120" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" from="0.8" to="0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Central focus point -->
+    <circle cx="256" cy="256" r="60" fill="#3498db">
+        <animate attributeName="r" values="60;65;60" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Target lines -->
+    <g stroke="#2980b9" stroke-width="6">
+        <!-- Vertical line -->
+        <line x1="256" y1="156" x2="256" y2="356" opacity="0.7"/>
+        <!-- Horizontal line -->
+        <line x1="156" y1="256" x2="356" y2="256" opacity="0.7"/>
+    </g>
+</svg>
